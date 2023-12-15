@@ -1,6 +1,6 @@
 import './App.css';
 import Mainpage from './Mainpage';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Snake from './components/Snake.js';
 import Dog from './components/Dog.js';
 import Dragon from './components/Dragon.js';
@@ -29,14 +29,14 @@ function App() {
     <Router>
     {isDesktopOrLaptop && <div>
       <div className='flex bg-red-100 justify-center border border-pink mx-auto w-3/4 lg:w-1/2 xl:w-1/3 shadow-slate-400 rounded-lg shadow-lg my-4'>
-      <a href="/" className='p-5 text-4xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </a>
+      <Link to="/" className='p-5 text-4xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </Link>
       </div>
       <Mainpage />
     </div> }
       {isMobile &&
       <div>
         <div className='flex bg-red-100 justify-center border border-pink mx-2 rounded-lg shadow-slate-400 shadow-lg my-4'>
-        <a href="/" className='p-5 text-3xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </a>
+        <Link to="/" className='p-5 text-3xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </Link>
         </div>
         <Mainpage />
       </div>
