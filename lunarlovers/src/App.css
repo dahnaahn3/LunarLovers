@@ -1,0 +1,20 @@
+body {
+  font-family: 'Gamja Flower', sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-image: url('https://www.shutterstock.com/image-photo/dreamy-cherry-blossoms-natural-border-600nw-407902399.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transform: rotate(180deg);
+  transform-origin: center;
+  opacity: 0.5;
+}
