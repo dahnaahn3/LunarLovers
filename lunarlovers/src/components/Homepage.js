@@ -10,7 +10,7 @@ const Homepage = () => {
   const isMobile = useMediaQuery ({
     query: '(max-width: 600px)'
   })
-
+console.log("hello")
   return (
     <div>
     {isDesktopOrLaptop &&
