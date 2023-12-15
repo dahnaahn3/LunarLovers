@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Snake = () => {
   return (
-  <div className='animate__animated animate__fadeIn animate__slow mt-5 py-5 border border-yellow-400 mx-auto w-3/4 lg:w-1/2 xl:w-1/3 bg-yellow-200 rounded-lg shadow-lg'>
+  <div className='mb-10 animate__animated animate__fadeIn  mt-5 py-5 border border-yellow-400 mx-auto w-3/4 lg:w-1/2 xl:w-1/3 bg-yellow-200 rounded-lg shadow-lg'>
     <div className='flex flex-col items-center'>
         <p>Year of the </p>
         <div className='flex items-center'>

@@ -14,17 +14,34 @@ import Rooster from './components/Rooster.js';
 import Sheep from './components/Sheep.js';
 import Tiger from './components/Tiger.js';
 import Homepage from './components/Homepage.js';
+import { useMediaQuery } from 'react-responsive';
 
 
 function App() {
+  const isDesktopOrLaptop = useMediaQuery ({
+    query: '(min-width: 601px)'
+  })
+  const isMobile = useMediaQuery ({
+    query: '(max-width: 600px)'
+  })
+
   return (
     <Router>
-    <div>
-      <div className='flex bg-red-100 justify-center border border-pink mx-auto w-3/4 lg:w-1/2 xl:w-1/3 rounded-lg shadow-lg my-4'>
+    {isDesktopOrLaptop && <div>
+      <div className='flex bg-red-100 justify-center border border-pink mx-auto w-3/4 lg:w-1/2 xl:w-1/3 shadow-slate-400 rounded-lg shadow-lg my-4'>
       <a href="/" className='p-5 text-4xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </a>
       </div>
       <Mainpage />
-    </div>
+    </div> }
+      {isMobile &&
+      <div>
+        <div className='flex bg-red-100 justify-center border border-pink mx-2 rounded-lg shadow-slate-400 shadow-lg my-4'>
+        <a href="/" className='p-5 text-3xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </a>
+        </div>
+        <Mainpage />
+      </div>
+      }
+
     <Switch>
       <Route exact path="/" component={Homepage} />
         <Route path="/snake" component={Snake} />

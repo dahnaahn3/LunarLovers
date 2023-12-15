@@ -8,7 +8,7 @@ import rabbit from '../images/rabbit.png'
 
 const Rabbit = () => {
   return (
-    <div className='animate__animated animate__fadeIn animate__slow mt-5 py-5 border border-green-400 mx-auto w-3/4 lg:w-1/2 xl:w-1/3 bg-green-200 rounded-lg shadow-lg'>
+    <div className='animate__animated mb-10 animate__fadeIn mt-5 py-5 border border-green-400 mx-auto w-3/4 lg:w-1/2 xl:w-1/3 bg-green-200 rounded-lg shadow-lg'>
     <div className='flex flex-col items-center'>
         <p>Year of the </p>
         <div className='flex items-center'>
