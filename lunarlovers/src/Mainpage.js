@@ -28,12 +28,11 @@ const matchingData = Data.find((item) => item.year.includes(parseInt(year, 10)))
   };
 
 
-
   return (
 
-      <div className='text-center'>
+      <div className='text-center pt-5 '>
         <form onSubmit={handleSubmit}>
-          <label className="text-3xl" htmlFor="year">Enter your birth year: </label>
+          <label className="text-3xl " htmlFor="year">Enter your birth year: </label>
           <input
             type="number"
             value={year}
@@ -50,7 +49,9 @@ const matchingData = Data.find((item) => item.year.includes(parseInt(year, 10)))
       {zodiacData && (
         <div></div>
       )}
-
+<a href="https://dahnaahn3.github.io/" target="_blank"
+className="hover:underline hover:text-blue-800 text-lg"
+style={{ position: "fixed", bottom: 0, left: 0, right: 0, textAlign: "center",}} >Dahna Ahn 2023</a>
       </div>
 
   );
