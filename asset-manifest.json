@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/LunarLovers/static/css/main.db162af8.css",
-    "main.js": "/LunarLovers/static/js/main.44909c08.js",
+    "main.js": "/LunarLovers/static/js/main.dae3403c.js",
     "static/js/787.2b98a0ef.chunk.js": "/LunarLovers/static/js/787.2b98a0ef.chunk.js",
     "static/media/moon.gif": "/LunarLovers/static/media/moon.9c4c8462761f4f050c11.gif",
     "index.html": "/LunarLovers/index.html",
     "main.db162af8.css.map": "/LunarLovers/static/css/main.db162af8.css.map",
-    "main.44909c08.js.map": "/LunarLovers/static/js/main.44909c08.js.map",
+    "main.dae3403c.js.map": "/LunarLovers/static/js/main.dae3403c.js.map",
     "787.2b98a0ef.chunk.js.map": "/LunarLovers/static/js/787.2b98a0ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db162af8.css",
-    "static/js/main.44909c08.js"
+    "static/js/main.dae3403c.js"
   ]
 }
