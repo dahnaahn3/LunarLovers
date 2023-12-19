@@ -44,18 +44,18 @@ function App() {
 
     <Switch>
       <Route exact path="/LunarLovers" component={Homepage} />
-        <Route path="/snake" component={Snake} />
-        <Route path="/ox" component={Ox} />
-        <Route path="/dog" component={Dog} />
-        <Route path="/dragon" component={Dragon} />
-        <Route path="/horse" component={Horse} />
-        <Route path="/monkey" component={Monkey} />
-        <Route path="/pig" component={Pig} />
-        <Route path="/rabbit" component={Rabbit} />
-        <Route path="/rat" component={Rat} />
-        <Route path="/rooster" component={Rooster} />
-        <Route path="/sheep" component={Sheep} />
-        <Route path="/tiger" component={Tiger} />
+        <Route exact path="/snake" component={Snake} />
+        <Route exact path="/ox" component={Ox} />
+        <Route exact path="/dog" component={Dog} />
+        <Route exact path="/dragon" component={Dragon} />
+        <Route exact path="/horse" component={Horse} />
+        <Route exact path="/monkey" component={Monkey} />
+        <Route exact path="/pig" component={Pig} />
+        <Route exact path="/rabbit" component={Rabbit} />
+        <Route exact path="/rat" component={Rat} />
+        <Route exact path="/rooster" component={Rooster} />
+        <Route exact path="/sheep" component={Sheep} />
+        <Route exact path="/tiger" component={Tiger} />
 </Switch>
 
     </Router>
