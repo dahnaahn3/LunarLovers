@@ -23,7 +23,6 @@ const matchingData = Data.find((item) => item.year.includes(parseInt(year, 10)))
     if (matchingData) {
       setZodiacData(matchingData);
       history.push(`/${matchingData.name.toLowerCase()}`)
-
     } else {
       setZodiacData(null);
     }

@@ -1,6 +1,6 @@
 import './App.css';
 import Mainpage from './Mainpage';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import {HashRouter, BrowserRouter as Router, Route, Switch, Link,} from 'react-router-dom'
 import Snake from './components/Snake.js';
 import Dog from './components/Dog.js';
 import Dragon from './components/Dragon.js';
@@ -26,39 +26,39 @@ function App() {
   })
 
   return (
-    <Router>
+    <HashRouter>
     {isDesktopOrLaptop && <div>
       <div className='flex bg-red-100 justify-center border border-pink mx-auto w-3/4 lg:w-1/2 xl:w-1/3 shadow-slate-400 rounded-lg shadow-lg my-4'>
-      <Link to="/LunarLovers" className='p-5 text-4xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </Link>
+      <Link to="/" className='p-5 text-4xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </Link>
       </div>
       <Mainpage />
     </div> }
       {isMobile &&
       <div>
         <div className='flex bg-red-100 justify-center border border-pink mx-2 rounded-lg shadow-slate-400 shadow-lg my-4'>
-        <Link to="/LunarLovers" className='p-5 text-3xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </Link>
+        <Link to="/" className='p-5 text-3xl'>⋆⁺₊⋆ ☁︎ Lunar Lovers ⋆⁺₊⋆ ☾ </Link>
         </div>
         <Mainpage />
       </div>
       }
 
     <Switch>
-      <Route exact path="/LunarLovers" component={Homepage} />
-        <Route exact path="/snake" component={Snake} />
-        <Route exact path="/ox" component={Ox} />
-        <Route exact path="/dog" component={Dog} />
-        <Route exact path="/dragon" component={Dragon} />
-        <Route exact path="/horse" component={Horse} />
-        <Route exact path="/monkey" component={Monkey} />
-        <Route exact path="/pig" component={Pig} />
-        <Route exact path="/rabbit" component={Rabbit} />
-        <Route exact path="/rat" component={Rat} />
-        <Route exact path="/rooster" component={Rooster} />
-        <Route exact path="/sheep" component={Sheep} />
-        <Route exact path="/tiger" component={Tiger} />
+      <Route exact path="/" component={Homepage}/>
+        <Route path="/snake" component={Snake} />
+        <Route  path="/ox" component={Ox} />
+        <Route  path="/dog" component={Dog} />
+        <Route  path="/dragon" component={Dragon} />
+        <Route  path="/horse" component={Horse} />
+        <Route  path="/monkey" component={Monkey} />
+        <Route  path="/pig" component={Pig} />
+        <Route  path="/rabbit" component={Rabbit} />
+        <Route  path="/rat" component={Rat} />
+        <Route  path="/rooster" component={Rooster} />
+        <Route  path="/sheep" component={Sheep} />
+        <Route  path="/tiger" component={Tiger} />
 </Switch>
 
-    </Router>
+</HashRouter>
   );
 }
 
